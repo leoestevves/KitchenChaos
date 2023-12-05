@@ -30,10 +30,12 @@ public class Player : MonoBehaviour
 
         inputVector = inputVector.normalized; //Nao anda mais rapido quando pressiona os dois botoes ao mesmo tempo
 
-        Vector3 moveDir = new Vector3(inputVector.x, 0, inputVector.y);
-        transform.position += moveDir * moveSpeed * Time.deltaTime;            
+        Vector3 moveDir = new Vector3(inputVector.x, 0f, inputVector.y);
+        transform.position += moveDir * moveSpeed * Time.deltaTime;
 
-        Debug.Log(Time.deltaTime);
+        float rotateSpeed = 10f;
+        transform.forward = Vector3.Slerp(transform.forward, moveDir, Time.deltaTime * rotateSpeed); //Ponto A, ponto B, interpolacao
+        
 
     }
 
