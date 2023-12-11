@@ -18,8 +18,7 @@ public class GameInput : MonoBehaviour
         Vector2 inputVector = playerInputActions.Player.Move.ReadValue<Vector2>();        
 
         inputVector = inputVector.normalized; //Nao anda mais rapido quando pressiona os dois botoes ao mesmo tempo
-
-        Debug.Log(inputVector);
+        
         return inputVector;
     }
 
