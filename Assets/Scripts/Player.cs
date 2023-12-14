@@ -91,7 +91,7 @@ public class Player : MonoBehaviour
             SetSelectedCounter(null); //Se não tem nada na frente, selectedCounter é nulo
         }
 
-        Debug.Log(selectedCounter);
+        //Debug.Log(selectedCounter);
     }
 
     private void HandleMovement()
