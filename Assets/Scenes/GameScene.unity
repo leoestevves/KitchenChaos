@@ -906,6 +906,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc73d6e69de77854ea606d578a2ccfed, type: 3}
+--- !u!114 &1780724933 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4593389573469872559, guid: bc73d6e69de77854ea606d578a2ccfed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1613779144}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7059f7be0ff189645b6ffb7ddc3fb3d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1932739989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,10 +1072,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4593389573469872559, guid: bc73d6e69de77854ea606d578a2ccfed,
         type: 3}
+      propertyPath: testing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593389573469872559, guid: bc73d6e69de77854ea606d578a2ccfed,
+        type: 3}
       propertyPath: tomatoPrefab
       value: 
       objectReference: {fileID: 8649679813510791275, guid: 6231c1fd91c6bfe4cb04f47bbf1226a0,
         type: 3}
+    - target: {fileID: 4593389573469872559, guid: bc73d6e69de77854ea606d578a2ccfed,
+        type: 3}
+      propertyPath: secondClearCounter
+      value: 
+      objectReference: {fileID: 1780724933}
     - target: {fileID: 6985501390430159498, guid: bc73d6e69de77854ea606d578a2ccfed,
         type: 3}
       propertyPath: m_Name
