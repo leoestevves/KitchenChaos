@@ -9,7 +9,32 @@ public class ClearCounter : BaseCounter
 
     public override void Interact(Player player)
     {
-        
+        if (!HasKitchenObject())
+        {
+            //Nao tem nenhum kitchenObject aqui
+            if (player.HasKitchenObject())
+            {
+                //Player ta carregando algo
+                player.GetKitchenObject().SetKitchenObjectParent(this);
+            }
+            else
+            {
+                //Player nao ta carregando nada
+            }
+        }
+        else
+        {
+            //Tem um kitchenObject aqui
+            if (player.HasKitchenObject())
+            {
+                //Player ta carregando algo
+            }
+            else
+            {
+                //Player nao ta carregando nada
+                GetKitchenObject().SetKitchenObjectParent(player);
+            }
+        }
     }
 
 }
