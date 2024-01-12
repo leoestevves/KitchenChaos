@@ -33,7 +33,7 @@ public class DeliveryManagerUI : MonoBehaviour
 
     private void UpdateVisual()
     {
-        foreach (Transform child in container)
+        foreach (Transform child in container) //Cycle, sem isso fica repetindo as receitas que ja foram
         {
             if (child == recipeTemplate) continue;
             Destroy(child.gameObject);
