@@ -24,6 +24,8 @@ public class DeliveryManager : MonoBehaviour
 
     private int waitingRecipesMax = 4;
 
+    private int successfulRecipesAmount;
+
     private void Awake()
     {
         Instance = this;
@@ -81,6 +83,7 @@ public class DeliveryManager : MonoBehaviour
                 if (plateContentsMatchesRecipe)
                 {
                     //Jogador entregou a receita correta
+                    successfulRecipesAmount++;
                     waitingRecipeSOList.RemoveAt(i);
 
                     OnRecipeCompleted?.Invoke(this, EventArgs.Empty);
@@ -97,5 +100,10 @@ public class DeliveryManager : MonoBehaviour
     public List<RecipeSO> GetWaitingRecipeSOList() //Forma de enviar a lista para outro script
     {
         return waitingRecipeSOList;
+    }
+
+    public int GetSuccessfulRecipesAmount()
+    {
+        return successfulRecipesAmount;
     }
 }
