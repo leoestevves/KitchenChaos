@@ -8,6 +8,11 @@ public class TrashCounter : BaseCounter
 
     public static event EventHandler OnAnyObjectTrashed;
 
+    new public static void ResetStaticData() //Resetando quando for para o main menu
+    {
+        OnAnyObjectTrashed = null;
+    }
+
 
     public override void Interact(Player player)
     {

@@ -10,6 +10,11 @@ public class CuttingCounter : BaseCounter, IHasProgress
 
     public static event EventHandler OnAnyCut;
 
+    new public static void ResetStaticData() //Resetando quando for para o main menu
+    {
+        OnAnyCut = null;
+    }
+
 
     public event EventHandler<IHasProgress.OnProgressChangedEventArgs> OnProgressChanged;
     public event EventHandler OnCut;
