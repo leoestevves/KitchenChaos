@@ -31,7 +31,7 @@ public class DeliveryManager : MonoBehaviour
         Instance = this;
         waitingRecipeSOList = new List<RecipeSO>(); //Iniciando a lista
     }
-
+    
     private void Update()
     {
         spawnRecipeTimer -= Time.deltaTime;
@@ -39,7 +39,7 @@ public class DeliveryManager : MonoBehaviour
         {
             spawnRecipeTimer = spawnRecipeTimerMax; //Resetando o tempo de spawn
 
-            if (waitingRecipeSOList.Count < waitingRecipesMax)
+            if (KitchenGameManager.Instance.IsGamePlaying() && waitingRecipeSOList.Count < waitingRecipesMax)
             {
                 RecipeSO waitingRecipeSO = recipeListSO.recipeSOList[UnityEngine.Random.Range(0, recipeListSO.recipeSOList.Count)];               
                 waitingRecipeSOList.Add(waitingRecipeSO);
