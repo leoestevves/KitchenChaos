@@ -20,10 +20,11 @@ public class KitchenGameManager : MonoBehaviour
         GameOver,
     }
 
+    [SerializeField] private float gamePlayingTimerMax = 120f;
+
     private State state;
     private float countdownToStartTimer = 3f;
     private float gamePlayingTimer;
-    private float gamePlayingTimerMax = 20f;
     private bool isGamePaused = false;
 
 
