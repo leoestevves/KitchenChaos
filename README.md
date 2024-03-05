@@ -3,6 +3,9 @@
 
 This readme has two versions, english and portuguese, if you want to read in portuguese click [HERE](#versão-em-português) or [PORTUGUÊS](#versão-em-português).
 
+There's a lot of comments in the code, I know this is NOT a good clean code practice, however this project is used as a portfolio and as study material, for these reasons I think it is important to place several comments in the code, facilitating learning.
+
+
 ## Objective
 This project has the objective to learn and practice game development, Unity, C#, clean code, in addition to use it as part of my portfolio.
 
@@ -35,6 +38,9 @@ Thanks for reading, I wish you a good week, see ya. :wave:
 
 ---
 ## Versão em português
+
+#### Observação :warning:
+Tem diversos comentários no código desse projeto, tenho ciência de que essa NÃO é uma boa prática de clean code, entretanto esse projeto é utilizado como potfólio e como material de estudo, por esses motivos acho importante colocar diversos comentários no código, facilitando o aprendizado.
 
 ## Objetivo
 Esse projeto tem o objetivo de praticar desenvolvimento de jogos, Unity3D, C#, práticas de clean code, além de usá-lo como parte do meu portfólio.
